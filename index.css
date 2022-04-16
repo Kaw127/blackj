@@ -1,8 +1,13 @@
 .table{
-    background-color:chartreuse;
+    background: radial-gradient(50% 123.47% at 50% 50%, #77ff55 0%, #02e902 100%),
+    linear-gradient(121.28deg, #d2f50b 0%, #a3ff4d 100%),
+    linear-gradient(360deg, #78fd1f 0%, #8fff00 100%),
+    radial-gradient(100% 164.72% at 100% 100%, #00ff0d 0%, #00ff2a 100%),
+    radial-gradient(100% 148.07% at 0% 0%, #0ba038 0%, #0bf13d 100%);
+  background-blend-mode: screen, color-dodge, overlay, difference, normal;
     border-radius: 10px;
     backdrop-filter: blur 14px;
-    height: 280px;
+    height: 340px;
     width: 580px;
     opacity: 0.6;
     border: 20px;
@@ -12,23 +17,46 @@
 
 .card1{
     display:flex;
-    justify-content: center;
-    align-content: center;
-    height: 40px;
-    background-color: azure;
-    width: 160px;
+    justify-content: left;
+    align-content: left;
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 50px;
+    background-color: rgb(205, 243, 200);
+    width: 480px;
 }
 
 .card2{
     display:flex;
-    justify-content: center;
-    align-content: right;
-    height: 40px;
-    background-color: azure;
-    width: 160px;
+    justify-content: flex-start;
+    align-content: space-between;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: rgb(205, 243, 200);
+    width: 480px;
 }
 
 .buttons{
     display: flex;
+    margin-left: 210px;
+    margin-top: 30px;
    
 }
+
+.player-name{
+    margin-top: 40px;
+}
+
+#dealer-cards img{
+    height: 175px;
+    width: 125px;
+    margin: 1px; 
+ }
+ 
+ #your-cards img{
+    height: 175px;
+    width: 125px;
+    margin: 1px; 
+ }
+ 

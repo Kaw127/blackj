@@ -4,32 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blackjack</title>
-  <script src="scripts/main.js"></script>
+  
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <div class="message-box" id="messages"></div>
   <div class="table">
+
     <div class="player">
+
       <label class="player-name">Dealer:
         <div class="card1">
         <span id="dealer-points" class="points"></span>
+        <img id="hidden" src="./cards/BACK.png"
       </label>
       </div>
-      <div id="dealer-hand" class="hand">
+      <div id="dealer-cards" class="hand">
         <!-- Dealer Hand -->
-      </div>
-    <div class="player">
-      <br>
-      <div class="card2">
+
+      <div>.</div>
+      <div>.</div>
       <label class="player-name">Player: 
+        <div class="card2">
         <span id="player-points" class="points"></span>
       </label>
     </div>
-      <div id="player-hand" class="hand">
+      <div id="your-cards" class="hand">
         <!-- Player Hand -->
       
       </div>
+
     </div>
     <div class="buttons">
       <button id="deal-button" type="button">Deal</button>
@@ -39,3 +43,5 @@
   </div>
 </body>
 </html>
+
+<script src="scripts/main.js"></script>
