@@ -7,41 +7,39 @@
   
   <link rel="stylesheet" href="index.css">
 </head>
-<body>
-  <div class="message-box" id="messages"></div>
-  <div class="table">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Black Jack</title>
+        <link rel="stylesheet" href="blackjack.css">
+        <script src="blackjack.js"></script>
+    </head>
 
-    <div class="player">
+    <body>
+      <div class = "table">
+        <div class = "card1">
+        <h2>Dealer: <span id="dealer-sum"></span></h2>
+        <div id="dealer-cards">
+            <img id="hidden" src="./cards/BACK.png">
+        </div>
+        </div>
 
-      <label class="player-name">Dealer:
-        <div class="card1">
-        <span id="dealer-points" class="points"></span>
-        <img id="hidden" src="./cards/BACK.png"
-      </label>
+        <div class = "card2">
+        <h2>Player: <span id="your-sum"></span></h2>
+        <div id="your-cards"></div>
+
+        <br>
+        <div class = 'buttons'>
+          <button id="deal">Deal</button>
+        <button id="hit">Hit</button>
+        <button id="stay">Stay</button>
+        <div class="results">
+        <p id="results"></p>
       </div>
-      <div id="dealer-cards" class="hand">
-        <!-- Dealer Hand -->
-
-      <div>.</div>
-      <div>.</div>
-      <label class="player-name">Player: 
-        <div class="card2">
-        <span id="player-points" class="points"></span>
-      </label>
-    </div>
-      <div id="your-cards" class="hand">
-        <!-- Player Hand -->
-      
       </div>
-
-    </div>
-    <div class="buttons">
-      <button id="deal-button" type="button">Deal</button>
-      <button id="hit-button" type="button">Hit</button>
-      <button id="stand-button" type="button">Stand</button>
-    </div>
-  </div>
-</body>
+      </div>
+    </body>
 </html>
 
 <script src="scripts/main.js"></script>
